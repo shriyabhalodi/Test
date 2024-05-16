@@ -1,0 +1,137 @@
+ <!--<h3>Meet Our Team:
+      <br>Dipak Mistry</h3>
+       <p>Dipak is the President and founder of Digitron. Dipak studied in his native India where he earned a Masters degree in Information Technology. He moved his family to the United States in 1981 and established a Network consulting company. He was recruited and hired by one of his clients where he served as Chief Network Engineer. His certifications include CNE and MCSE + I Certification. Dipak is an expert in networking and communications. He will be on-site for all services performed by Digitron.</p>
+      <h3>Jack Cahill</h3>
+      <p>Jack is Vice President and co-owner of Digitron. Jack has been involved in Information Technology for over 20 years. He entered the industry as a programmer, later serving as a Support Engineer, Network Engineer, and then entering management. He has served as both a Manager and Director of IT. His past positions were with companies large and small, several of which had a global presence. Jack is one of the initial contacts you will make when you decide to learn more about Digitron. He is a strong advocate of customer support. He insures that Digitron personnel are available when you need them.</p>
+      <h3>Bob Bernstein</h3>
+      <p>As principal owner of wd-2, Bob partners with Digitron on specialized projects involving expertise with PC/Macintosh platforms, desktop publishing applications and internet application support. He has over 14 years publishing experience and over 4 years in web publishing.</p>
+  </span>
+ 
+    </div>
+  </div>
+</div>-->
+
+/* Media Query for screens up to 576px */
+@media screen and (max-width: 576px) {
+  .partner-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust column size for smaller screens */
+    gap: 3px; /* Reduce gap between partner logos */
+    padding: 10px 20px 30px;
+  }
+  
+  .partner {
+    height: 100px; /* Adjust height for smaller screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .partner img {
+    height: 100px; /* Adjust image height for smaller screens */
+  }
+}
+
+/* Media Query for screens between 577px and 992px */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .partner-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column size for medium screens */
+    gap: 5px; /* Gap between partner logos */
+    padding: 10px 20px 30px;
+  }
+  
+  .partner {
+    height: 150px; /* Adjust height for medium screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .partner img {
+    height: 150px; /* Adjust image height for medium screens */
+  }
+}
+
+/* Media Query for screens 993px and above */
+@media screen and (min-width: 993px) {
+  .partner-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column size for large screens */
+    gap: 10px; /* Gap between partner logos */
+    padding: 10px 20px 30px;
+  }
+  
+  .partner {
+    height: 200px; /* Adjust height for large screens */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .partner img {
+    height: 200px; /* Adjust image height for large screens */
+  }
+}
+
+
+/* Small screens */
+
+@media screen and (max-width: 576px) {
+  .content p {
+        font-size: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .content p {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 993px) {
+  .content p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Media Query for screens up to 576px */
+@media screen and (max-width: 576px) {
+    .row {
+        width: calc(30% - 20px); /* Set the width to roughly 1/3 of the container width */
+    }
+}
+
+/* Media Query for screens between 577px and 768px */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .row {
+        width: calc(30% - 20px); /* Set the width to roughly 1/2 of the container width */
+    }
+}
+
+/* Media Query for screens between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .row {
+        width: calc(30% - 20px); /* Set the width to roughly 1/2 of the container width */
+    }
+}
+
+/* Small screens */
+
+@media screen and (max-width: 576px) {
+  .home p {
+    font-size: 10px; /* Adjust font size for small screens */
+  }
+}
+
+/* Medium screens */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .home p {
+    font-size: 14px; /* Revert to default font size for medium screens */
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 993px) {
+  .home p {
+    font-size: 16px; /* Adjust font size for large screens */
+  }
+}
